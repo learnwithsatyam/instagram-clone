@@ -11,6 +11,7 @@ export default NextAuth({
     // ...add more providers here
   ],
   debug : true,
+  secret : process.env.SECRET,
   pages : {
       signIn : "/auth/signin",
   },
